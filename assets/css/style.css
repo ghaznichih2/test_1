@@ -1,0 +1,14 @@
+html , body {
+    direction: rtl;
+    background-color: lightgray;
+}
+
+h1{
+    text-align: center;
+    background:rgb(110, 110, 110);
+    color: aquamarine;
+    margin: auto;
+    width: 70%;
+    border-radius: 30px;
+    font-family: fantasy;
+}
