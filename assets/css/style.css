@@ -1,5 +1,5 @@
 html , body {
-    direction: rtl;
+    /* direction: rtl; */
     background-color: lightgray;
 }
 
@@ -11,4 +11,9 @@ h1{
     width: 70%;
     border-radius: 30px;
     font-family: fantasy;
+}
+.titlee{
+    margin-right: 70px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px; 
 }
