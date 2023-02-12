@@ -55,11 +55,11 @@
 <!-- __________navbar end -->
 
 <!-- start home -->
-        <section class=" p-all-9 ">
+        <section class=" p-all-9  row  container">
             
-            <div class="flex-c w-full">
+            <div class="flex-c w-full col s12 m4 l6 m-t-30">
                 
-                <button class="waves-effect waves-light btn w-full rounded_pix">
+                <button id="add-user-bottem" class="waves-effect waves-light btn w-full rounded_pix">
                     <i class="material-icons left">add</i>
                     add user
 
@@ -71,7 +71,7 @@
             </div>
            
 
-            <div class="row">
+            <div class="row col s12 m8 l6">
                 <div class="input-field col s12">
                   <input  value="" id="search" 
                   type="text" class="validate">
@@ -87,10 +87,182 @@
 
 
         </section>
+        <section class="container">
+
+
+          
+          <ul class="collapsible hide-on-med-and-up">
+            <li class="user-list-item">
+              <div class="collapsible-header"><i class="material-icons blue-text
+                user-list-arrow-icon trans-0-5 ">
+                arrow_drop_down_circle</i>homayoon
+              </div>
+
+              <div class="collapsible-body">
+                <span>user name:</span>
+                <span>homayon</span>
+                <br>
+                <span>user email:</span>
+                <span>homayoon@gmail.com</span>
+
+              </div>
+
+            </li>
+
+            <li class="user-list-item">
+              <div class="collapsible-header"><i class="material-icons blue-text
+                user-list-arrow-icon trans-0-5 ">arrow_drop_down_circle</i>shoja
+              </div>
+
+              <div class="collapsible-body">
+                <span>user name:</span>
+                <span>shoja</span>
+                <br>
+                <span>user email:</span>
+                <span>shoja@gmail.com</span>
+              </div>
+            </li>
+
+            <li class="user-list-item">
+              <div class="collapsible-header">
+                <i class="material-icons blue-text
+                user-list-arrow-icon trans-0-5 ">arrow_drop_down_circle</i>jok
+              </div>
+
+              <div class="collapsible-body">
+                <span>user name:</span>
+                <span>jok</span>
+                <br>
+                <span>user email:</span>
+                <span>jok@gmail.com</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hide-on-med-and-down show-on-med-and-up">
+            <table class="centered striped highlight ">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>name</th>
+                  <th>email</th>
+                  <th>status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>homayoon</td>
+                  <td>homayoon@gmail.com</td>
+                  <td>admin</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>h2</td>
+                  <td>homay2oon@gmail.com</td>
+                  <td>member</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+                  <td>hosseini</td>
+                  <td>hosseini@gmail.com</td>
+                  <td>member</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="all-item-counter container p-l-9 p-r-9 p-t-10 p-b-10 
+          flex-sb-m  pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30 grey lighten-2  ">
+            <div class="item-counter flex-l p-l-10 flex-l-m ">
+              show
+              <span class="m-r-5 m-l-5 max-w-50">
+                <input type="number"class="blue-text darken-2 no-border 
+                center-align" value="10">
+              </span>
+              of
+              <span class="blue-text darken-2 m-l-5 m-r-5">100</span>
+            </div>
+
+            <div class="counter-icon ">
+
+              <i class="material-icons blue darken-2 m-l-5 m-r-5 
+              p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text
+               rounded_pix ">
+                keyboard_arrow_left
+              </i>
+
+              <i class="material-icons blue darken-2 m-l-5 m-r-5
+               p-l-5 p-r-5 p-t-1 p-b-3 waves-effect waves-light white-text 
+               rounded_pix">
+                keyboard_arrow_right
+              </i>
+            </div>
+
+
+          </div>
+
+        </section>
+        <div class="modal-back dis-none"></div>
+
+        <div class="add-user-modal container rounded_top_30 trans-0-6">
+          
+          <div class="row p-l-40 p-r-40 center-on-small-only">
+            <h5>
+              <i class="material-icons m-l-5 m-t-7 pos-relative top-4 ">person_add</i>
+              add user
+            </h5>
+          </div>
+
+          <div class="row ">
+            <form action="">
+              <div class="input-field col s6">
+                <input placeholder="First Name" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+
+              <div class="input-field col s6">
+                <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input placeholder="Email" id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telephone</label>
+              </div>
+
+            </form>
+
+
+            <button type="button" class=" waves-effect waves-light rounded_pix  
+            btn blue darken-1 m-t-15 m-b-10 m-l-150 f-bold ">
+
+              <i class=" material-icons pos-relative top-1">check </i>
+               save
+            </button>
+            
+          </div>
+          
+            
+          
+        </div>
 
 <!-- end home  -->
 
           <script src="/assets/js/materialize.min.js"></script>
           <script src="/assets/js/main.js"></script>
+          <script src="/assets/js/user.js"></script>
     </body>
 </html>
